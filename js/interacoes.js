@@ -199,22 +199,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.value = value;
         });
     }
-    
-    // 7. BOTÃO DE TESTE
-    const testBtn = document.createElement('button');
-    testBtn.textContent = '🧪 TESTAR MODAL';
-    testBtn.style.cssText = 'position:fixed; bottom:10px; right:10px; z-index:9999; background:#ED6D19; color:#fff; border:none; padding:10px 15px; border-radius:5px; cursor:pointer; font-weight:bold; box-shadow: 0 2px 10px rgba(0,0,0,0.3);';
-    testBtn.onclick = function() {
-        abrirModal({
-            titulo: "🧪 TESTE",
-            descricao: "Modal funcionando perfeitamente!",
-            imagem: "img/mountain-bike.jpg"
-        });
-    };
-    document.body.appendChild(testBtn);
-    console.log("✅ Botão de teste adicionado!");
-    
-    console.log("🎯 Sistema inicializado com sucesso!");
 });
 
 // Garantir que os botões sejam configurados mesmo se a página carregar depois
